@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+        <title>Тренировки в полёте</title>
+    </head>
+    <body>
+        <h1>Миссия колонизация Марса</h1>
+        <h4>И на Марсе будут яблони цвести!</h4>
+        {% if 'строител' in profession %}
+            <h2 align="center">Научные симуляторы</h2>
+            <center>
+                <img src="/static/img/science.png" alt="Научные симуляторы">
+            </center>
+        {% elif 'инженер' in profession %}
+            <h2 align="center">Инженерные тренажёры</h2>
+            <center>
+                <img src="/static/img/engineer.png" alt="Инженерные тренажёры">
+            </center>
+        {% else %}
+            <h2 align="center">Другие тренажёры</h2>
+            <center>
+                <img src="/static/img/other.png" alt="Другие тренажёры">
+            </center>
+        {% endif %}
+    </body>
+</html>
